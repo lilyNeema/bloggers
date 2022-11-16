@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bloggers Travel</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="scripts.js"></script>
+  <!-- fault tolerance or gracefuldegradation-->
+  <noscript>You need to enable javascript to view the full site.</noscript>
+</head>
+
+<!-- styling for the slideshow-->
+<style>
+.slideshow-container {
+  position: absolute;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: steelblue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.activee {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+img{
+  border-radius: 30px 30px 200px 200px;
+}
+.mySlides img{
+width: 168%;
+}
+</style>
+<body class="dark-theme">
+
+<!-- navigation bar-->
+    <nav class="topnav">
+         <a class="active " href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="gallery.html">Gallery</a>
+         <a href="contact.html" style="float: right;">Contact</a>
+   </nav>
+   <div>
+     <button class="btn">Dark</button>
+   </div>
+<!-- slideshow -->
+   <div class="container con">
+        <h2>Hi, Welcome to bloggers.</h2>
+   <div class="slideshow-container">
+
+<div class="mySlides fade">
+    <img src="assets/img/portfolio/portfolio-1.jpg">
+</div>
+
+<div class="mySlides fade">
+    <img src="assets/img/portfolio/portfolio-2.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/portfolio/portfolio-3.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/portfolio/portfolio-4.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/portfolio/portfolio-5.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/portfolio/portfolio-6.jpg">
+</div>
+   </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<!--javascript code for slideshow -->
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");//defining
+  var dots = document.getElementsByClassName("dot");//defining
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" activee", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " activee";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+  </div>  
+
+<!-- service section -->
+    <section class="services">
+        <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="about.html>"><b>About Us</b></a></h4>
+              <p><i>Find this details in about page.</i></p>
+            </div>
+        
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="gallery.html"><b>Our photos</b></a></h4>
+              <p><i>Click here to view our gallery</i></p>
+            </div>
+
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="about.html"><b>My resume</b></a></h4>
+              <p><i>Click here to view my resume.</i></p>
+            </div>
+        </section>
+        
+<footer style="background-color: steelblue; text-align: center;">
+    <p>welcome</p>
+</footer>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bluebell</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+styling for the slideshow
+<style>
+.slideshow-container {
+  position: absolute;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: steelblue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.activee {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+img{
+  border-radius: 30px 30px 200px 200px;
+}
+</style>
+<body >
+
+navigation bar
+    <nav class="topnav">
+         <a class="active " href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="services.html">Services</a>
+         <a href="contact.html" style="float: right;">Contact</a>
+   </nav>
+
+slideshow 
+   <div class="container con">
+        <h2>WELCOME TO BLUEBELL</h2>
+   <div class="slideshow-container">
+
+<div class="mySlides fade">
+    <img src="assets/img/why-us.jpg">
+</div>
+
+<div class="mySlides fade">
+    <img src="assets/img/about.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/blog/blog-1.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/blog/blog-2.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/blog/blog-3.jpg">
+</div>
+<div class="mySlides fade">
+    <img src="assets/img/blog/blog-4.jpg">
+</div>
+   </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+javascript code for slideshow 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" activee", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " activee";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+  </div>   
+service section 
+    <section class="services">
+        <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><b>Our mission</b></h4>
+              <p><i>We seek the truth and help people understand the world through socialmedia.</i></p>
+            </div>
+        
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><b>Our Plan</b></h4>
+              <p><i>To be able to let you express youself and just be you</i></p>
+            </div>
+
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><b>Our Vision</b></h4>
+              <p><i>To make each and every person feel unique in their own way.</i></p>
+            </div>
+        </section>
+<footer>
+    
+</footer>
+</body>
+</html>
+
+
+  ======= Footer ======= 
+  <footer id="footer">
+    <div class="container">
+      <h3>Laura Thomson</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Laura</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ 
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+Vendor JS Files <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+Template Main JS File
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>-->

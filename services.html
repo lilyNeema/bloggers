@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bloggers</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- styling for video slideshow -->
+<style>
+.mySlides {
+  display: none;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.9s ease;
+}
+.activee {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 20.s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .09} 
+  to {opacity: 1}
+}
+</style>
+</head>
+<body >
+ <!-- navigation bar-->
+    <nav class="topnav">
+         <a class="active " href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="services.html">Services</a>
+         <a href="contact.html" style="float: right;">Contact</a>
+   </nav>
+   <!-- video slideshow -->
+  <section class="service-details">
+   <div class="container"> 
+   <div class="slideshow-container">
+     <div class="mySlides fade"><center>
+     <video autoplay controls muted><source src="assets/video/video-1.mp4" type="video/mp4"></video>
+     </div></center>
+     <div class="mySlides fade">
+     <center><video autoplay controls muted><source src="assets/video/video-2.mp4" type="video/mp4"></video></center>
+     </div>
+     <div class="mySlides fade">
+     <center><video autoplay controls muted><source src="assets/video/video-3.mp4" type="video/mp4"></video>
+     </div></center>
+
+   <div style="text-align:center; margin-left: 27%;">
+     <span class="dot"></span> 
+     <span class="dot"></span> 
+     <span class="dot"></span> 
+   </div>
+<!-- javascript code for the slideshow -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" activee", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " activee";
+  setTimeout(showSlides, 20000);
+}
+</script>
+</div>
+<!-- services offered section -->
+<section class="service-details">
+ <div class="row">
+          <div class="card">
+              <div class="card-img">
+              <img src="assets/img/service-details-1.jpg" alt="..." >
+              </div>
+              <div class="card-body">
+              <h5 class="card-title"><a href="#">Video  editing</a></h5>
+              <p class="card-text">Create and edit your videos with Bluebell.</p>
+              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+          </div>
+    
+          <div class="card">
+               <div class="card-img">
+               <img src="assets/img/service-details-2.jpg" alt="...">
+               </div>
+               <div class="card-body">
+               <h5 class="card-title"><a href="#">Music editing</a></h5>
+               <p class="card-text">You can create music and post it here.</p>
+               <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+               </div>
+          </div>
+ </div>
+  
+ <div class="row">
+          <div class="card">
+               <div class="card-img">
+               <img src="assets/img/service-details-3.jpg" alt="..." style="width: 90%;height: 300px;">
+               </div>
+               <div class="card-body">
+               <h5 class="card-title"><a href="#">Blogging</a></h5>
+               <p class="card-text">Displays information in reverse chronological order – the latest content appearing first, for every person to use their unique experiences and backgrounds, together – to spark solutions that create a better, healthier world.</p>
+               <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+               </div>
+           </div>
+          
+           <div class="card">
+               <div class="card-img">
+               <img src="assets/img/service-details-4.jpg" alt="...">
+               </div>
+               <div class="card-body">
+               <h5 class="card-title"><a href="#">Animation</a></h5>
+               <p class="card-text">Add beautiful animated messages from our text & titles library. Adjust the audio of each individual track on your timeline.Edit the color, size, font, and even animation of your text and titles.</p>
+               <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+               </div>
+          </div>
+</div>
+</section>
+<!-- an audio track -->
+         <div>
+             <audio controls>
+             <source src="assets/img/song.mp3" type="">
+             </audio>
+         </div>
+<!-- our gallery-->
+<section class="portfolio">
+<div class="row">
+          <div class="portfolio-item">
+              <h3>Music</h3>
+              <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+          </div>
+          
+          <div class="portfolio-item">
+              <h3>Profession</h3>
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-item">
+              <h3>Travels</h3>
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+          </div>
+</div>
+
+<div class="row">
+              <div class="portfolio-item">
+                <h3>Environment</h3>
+                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              </div>
+     
+              <div class="portfolio-item">
+                <h3>Healthy eating</h3>
+                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              </div>           
+              <div class="portfolio-item">
+                <h3>Perfumes</h3>
+                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              </div>
+</div>
+         
+<div class="row">
+              <div class="portfolio-item">
+                <h3>Skin care</h3>
+                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              </div>
+          
+              <div class="portfolio-item">
+                <h3>Health care</h3>
+                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              </div>
+          
+              <div class="portfolio-item">
+                <h3>Blogging</h3>
+                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              </div>
+</div>            
+</section>
+
+<section class="pricing">
+    <div class="row">
+          <div class="box" style="margin-left: 55px;">
+            <h3>Free</h3>
+            <h4>$0<span>per month</span></h4>
+            <p>Experience the best blogging experience for free</p>
+            <a href="#" class="get-started-btn">Get Started</a>
+          </div>
+
+          <div class="box" style="box-shadow: 5px 5px 5px 5px darkgrey;">
+            <h3>Business</h3>
+            <h4>$29<span>per month</span></h4>
+            <p>Write and read blogs from and for companies</p>          
+            <a href="#" class="get-started-btn">Get Started</a>
+          </div>
+
+          <div class="box">
+            <h3>Developer</h3>
+            <h4>$49<span>per month</span></h4>
+            <p>Read and write blogs on programming</p>
+            <a href="#" class="get-started-btn">Get Started</a>
+          </div>
+     </div>
+</section><!-- End Pricing Section -->
+
+         
+  
+</body>
+</html>
